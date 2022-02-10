@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-const Home = () => {
+import Pop from "./Pop";
+const Home = ({ closeSub }) => {
+  const [popUp, setPopUp] = useState(false);
+  const closePop = () => {
+    setPopUp(false);
+  };
+  useEffect(() => {
+    setTimeout(() => {
+      setPopUp(true);
+    }, 3000);
+  }, []);
   return (
     <div style={{ display: "grid" }}>
-      <section style={{ height: "10vh", width: "100%", alignItems: "center" }}>
+      <section style={{ height: "50vh", width: "100%", alignItems: "center" }}>
         {/* <img
           src={
             "https://cdn.shopify.com/s/files/1/0680/3205/files/IMG_1902-1_1024x1024.jpeg?v=1556102132"
           }
         /> */}
       </section>
+      {popUp && <Pop closePop={closePop}></Pop>}
+
       <div className="main">
         <motion.section className="home-all">
           <Link to="/whoweare">
@@ -47,6 +58,7 @@ const Home = () => {
               }}
               style={{ width: "100%", height: "100vh" }}
             />
+
             <section className="headerCont">
               <h1>How it works </h1>
             </section>
@@ -58,8 +70,8 @@ const Home = () => {
             <motion.img
               src="https://ohsheglows.com/wp-content/uploads/2014/03/greensmoothie.jpg"
               alt="pic"
-              initial={{ scale: 0.5, x: 200 }}
-              animate={{ scale: 1, x: 0 }}
+              initial={{ scale: 0.5, y: 200 }}
+              animate={{ scale: 1, y: 0 }}
               transition={{
                 type: "spring",
                 stiffness: 160,
