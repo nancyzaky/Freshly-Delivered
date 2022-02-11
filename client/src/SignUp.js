@@ -117,7 +117,12 @@ const SignUp = () => {
           />
           <br></br>
           {error && <h4>{errorMessage}</h4>}
-          <button type="submit" className="btn" onClick={handleSub}>
+          <button
+            type="submit"
+            className="btn"
+            style={{ marginTop: "3%" }}
+            onClick={handleSub}
+          >
             Sign Up
           </button>
         </form>

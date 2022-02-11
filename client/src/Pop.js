@@ -6,9 +6,9 @@ const Pop = ({ closePop }) => {
   return (
     <div class="container">
       <div class="cookiesContent" id="cookiesPopup">
-        {/* <button class="close" onClick={closePop}>
-          ✖
-        </button> */}
+        <button class="close" onClick={closePop}>
+          x
+        </button>
         <img
           alt="cookies-img"
           src={
