@@ -39,6 +39,42 @@ export const navItems = [
     title: "Shopping-Cart",
   },
 ];
+export const DataforHowWorks = [
+  {
+    id: 1,
+    paragraph: "egjfqjhffeklfb",
+    picUrl:
+      "http://cdn.shopify.com/s/files/1/0316/7518/7336/articles/organic_skincare_natural_skincare_clean_skincare_6_96ff74ef-eb41-4b3a-968a-5d8cda59bd6e_1200x1200.jpg?v=1607464418",
+    header: "1.Ingredients",
+  },
+  {
+    id: 2,
+    paragraph: "egjfqjhffeklfb",
+    picUrl: "https://ifc-solutions.com/wp-content/uploads/organic-colors.jpg",
+    header: "2.We Do The Hard Work For You",
+  },
+  {
+    id: 3,
+    paragraph: "egjfqjhffeklfb",
+    picUrl:
+      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assorted-fruit-in-bowl-royalty-free-image-903846026-1545573737.jpg",
+    header: "3.Add Content Of Kit To Blender",
+  },
+  {
+    id: 4,
+    paragraph: "egjfqjhffeklfb",
+    picUrl:
+      "https://foodal.com/wp-content/uploads/2018/07/7-Smoothie-Solutions-Improve-Your-Blender-Game-with-These-Tips.jpg",
+    header: "4.Add Recommended Liquid Base And Blend",
+  },
+  {
+    id: 5,
+    paragraph: "egjfqjhffeklfb",
+    picUrl:
+      "https://foodal.com/wp-content/uploads/2018/07/7-Smoothie-Solutions-Improve-Your-Blender-Game-with-These-Tips.jpg",
+    header: "5.Enjoy!",
+  },
+];
 
 export const sideBarItems = [
   {
@@ -120,6 +156,14 @@ export const sideBarItems = [
         text: "Post Work Out",
         icon: <GiMuscleUp className="icon-small" />,
       },
+      {
+        id: 7,
+        url: "/smoothie/",
+        text: "General",
+        icon: <GiMuscleUp className="icon-small" />,
+      },
+      ,
     ],
   },
+  { id: 8, url: "/locator", text: "Store Locator" },
 ];
